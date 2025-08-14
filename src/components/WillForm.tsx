@@ -15,7 +15,7 @@ export const WillForm: React.FC<WillFormProps> = ({
     lastName: '',
     email: '',
     phone: '',
-    cryptoPortfolio: '',
+    formType: '',
     hasBeneficiary: '',
     comments: ''
   });
@@ -40,6 +40,7 @@ export const WillForm: React.FC<WillFormProps> = ({
         user_email: formData.email,
         user_phone: formData.phone,
         user_beneficiary: formData.hasBeneficiary,
+        formType: formData.formType,
         user_comments: formData.comments
       }, 'rH43x0yeLSByYteCS');
       toast.success('Thank you! Our team will reach out to finalize your will.');
@@ -90,7 +91,26 @@ export const WillForm: React.FC<WillFormProps> = ({
             </label>
             <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))]" placeholder="Your phone number" />
           </div>
-         
+
+          <div>
+            <label htmlFor="formType" className="block text-sm font-medium text-[hsl(var(--muted-foreground))] mb-1">
+              Are you interested in a Trust or a Will? *
+            </label>
+            <select
+              id="formType"
+              name="formType"
+              value={formData.formType}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))]"
+            >
+              <option value="">Select an option</option>
+              <option value="Trust">Trust</option>
+              <option value="Will">Will</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </div>
+
           <div>
             <label htmlFor="hasBeneficiary" className="block text-sm font-medium text-[hsl(var(--muted-foreground))] mb-1">
               Have a Beneficiary in Mind?
