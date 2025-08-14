@@ -39,7 +39,6 @@ export const WillForm: React.FC<WillFormProps> = ({
         fromName: `${formData.firstName} ${formData.lastName}`,
         user_email: formData.email,
         user_phone: formData.phone,
-        user_crypto_portfolio: formData.cryptoPortfolio,
         user_beneficiary: formData.hasBeneficiary,
         user_comments: formData.comments
       }, 'rH43x0yeLSByYteCS');
@@ -91,12 +90,7 @@ export const WillForm: React.FC<WillFormProps> = ({
             </label>
             <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))]" placeholder="Your phone number" />
           </div>
-          <div>
-            <label htmlFor="cryptoPortfolio" className="block text-sm font-medium text-[hsl(var(--muted-foreground))] mb-1">
-              What's your Crypto Portfolio?
-            </label>
-            <input type="text" id="cryptoPortfolio" name="cryptoPortfolio" value={formData.cryptoPortfolio} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))]" placeholder="Optional details about your portfolio" />
-          </div>
+         
           <div>
             <label htmlFor="hasBeneficiary" className="block text-sm font-medium text-[hsl(var(--muted-foreground))] mb-1">
               Have a Beneficiary in Mind?
