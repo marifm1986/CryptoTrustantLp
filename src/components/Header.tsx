@@ -19,7 +19,7 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            src="/public/logo.png"
+            src="/logo.png"
             alt="Logo"
             className={`h-8 w-auto md:h-10 transition-all duration-300 ${isScrolled ? '' : 'filter brightness-0 invert'}`}
             style={{ maxWidth: '250px', height: 'auto' }}
