@@ -15,11 +15,11 @@ export const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+      await send('service_dmcg5kd', 'template_jzlj6ts', {
         from_name: formData.name,
         reply_to: formData.email,
         message: formData.message
-      }, 'YOUR_USER_ID');
+      }, 'rH43x0yeLSByYteCS');
       toast.success("Message sent successfully! We'll get back to you soon.");
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
