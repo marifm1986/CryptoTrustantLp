@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
           </a>
         </nav>
   <button onClick={openForm} className={`${isScrolled ? 'bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-hover))] text-[hsl(var(--brand-foreground))]' : 'bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-hover))] text-[hsl(var(--brand-foreground))] shadow-md'} font-semibold py-2 px-4 rounded-md transition-colors hidden md:block`}>
-          Start Your Will
+          Start Your Will / Trust
         </button>
         {/* Mobile Menu Button */}
   <button className={`${isScrolled ? 'text-[hsl(var(--muted-foreground))]' : 'text-white'} md:hidden`} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -85,7 +85,7 @@ export const Header: React.FC<HeaderProps> = ({
           openForm();
           setIsMobileMenuOpen(false);
         }} className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-hover))] text-[hsl(var(--brand-foreground))] font-semibold py-2 px-4 rounded-md transition-colors w-full">
-              Start Your Will
+              Start Your Will / Trust
             </button>
           </nav>
         </div>}

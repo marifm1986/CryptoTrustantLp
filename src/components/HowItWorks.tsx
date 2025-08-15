@@ -73,7 +73,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({
       </div>
       <div className="mt-12 text-center">
         <button onClick={openForm} className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-hover))] text-[hsl(var(--brand-foreground))] font-bold py-3 px-8 rounded-md transition-colors text-lg">
-          Start Your Will
+          Start Your Will / Trust
         </button>
       </div>
     </div>

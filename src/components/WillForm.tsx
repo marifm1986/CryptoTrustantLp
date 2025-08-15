@@ -58,7 +58,7 @@ export const WillForm: React.FC<WillFormProps> = ({
       <div className="p-6">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-[hsl(var(--primary))]">
-            Start Your Will
+            Start Your Will / Trust
           </h2>
           <button onClick={onClose} className="text-gray-500 hover:text-gray-700" aria-label="Close form">
             <X size={24} />
