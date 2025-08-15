@@ -12,8 +12,7 @@ export const Hero: React.FC<HeroProps> = ({
            Protect your Legacy Create a Will / Trust Today
           </h1>
           <p className="text-lg md:text-xl mb-8 text-gray-100">
-            Secure your crypto future with a legally binding will tailored for
-            your digital assets.
+           Small price, Big protection
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button onClick={openForm} className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-hover))] text-[hsl(var(--brand-foreground))] font-bold py-3 px-8 rounded-md transition-colors text-lg">
