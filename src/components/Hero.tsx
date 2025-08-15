@@ -9,7 +9,7 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-           Protect your Legacy – Create a Will / Trust Today
+           Protect your Legacy Create a Will / Trust Today
           </h1>
           <p className="text-lg md:text-xl mb-8 text-gray-100">
             Secure your crypto future with a legally binding will tailored for
@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({
                 </svg>
               </div>
               <span className="text-sm">
-                Secure Blockchain-Based Will Creation
+                Ethereum storage
               </span>
             </div>
           </div>

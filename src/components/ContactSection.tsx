@@ -81,7 +81,7 @@ export const ContactSection = () => {
               </div>
 
               <div className="pt-4">
-                <p className="text-sm text-[hsl(var(--muted-foreground))]">Our team of crypto-law specialists is ready to assist you with any questions about creating a will for your digital assets.</p>
+                <p className="text-sm text-[hsl(var(--muted-foreground))]">Our team of specialists is ready to assist you with any questions about creating a will or trust</p>
               </div>
             </div>
           </div>
